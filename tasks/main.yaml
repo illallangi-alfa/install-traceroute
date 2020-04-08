@@ -1,0 +1,7 @@
+---
+- name: "Install traceroute"
+  package:
+    pkg: "{{ install_traceroute_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    state: "present"
+  tags:
+    - "traceroute"

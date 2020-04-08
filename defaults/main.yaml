@@ -1,0 +1,6 @@
+---
+install_traceroute_packages:
+  debian: &debian
+    - "traceroute"
+  debian_armv7l: *debian
+  debian_x86_64: *debian
